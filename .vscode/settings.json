@@ -1,7 +1,6 @@
 {
   "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" },
   "editor.defaultColorDecorators": "always",
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "files.associations": { "index.css": "tailwindcss" },
   "prettier.configPath": "prettier.config.ts",
   "typescript.tsdk": "node_modules/typescript/lib"
