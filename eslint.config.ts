@@ -18,19 +18,19 @@ export default defineConfig([
   {
     files: ["**/*.{ts,tsx}"],
     extends: [
+      importX.configs.typescript,
       js.configs.recommended,
-      tsEslintConfigs.strictTypeChecked,
-      tsEslintConfigs.stylisticTypeChecked,
+      reactDom.configs.strict,
       reactHooks.configs.flat.recommended,
       reactRefresh.configs.vite,
       reactX.configs["strict-typescript"],
-      reactDom.configs.strict,
-      importX.configs.typescript,
+      tsEslintConfigs.strictTypeChecked,
+      tsEslintConfigs.stylisticTypeChecked,
     ],
     languageOptions: {
       parserOptions: {
         parser,
-        project: ["./tsconfig.app.json", "./tsconfig.node.json"],
+        project: "./tsconfig.json",
         tsconfigRootDir: import.meta.dirname,
       },
       ecmaVersion: 2020,

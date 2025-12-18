@@ -49,9 +49,27 @@ jspm_packages/
 .env.*
 !.env.example
 
-# Vite logs files
-vite.config.js.timestamp-*
-vite.config.ts.timestamp-*
-
 # Darwin
 .DS_Store
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# Generated native folders
+/ios
+/android
