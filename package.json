@@ -6,11 +6,12 @@
   "scripts": {
     "start": "expo start",
     "format": "prettier --write .",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
     "prepare": "husky",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web",
-    "lint": "expo lint"
+    "web": "expo start --web"
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": [
