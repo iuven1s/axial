@@ -10,3 +10,7 @@ updates:
       all-deps:
         patterns:
           - "*"
+    ignore:
+      - dependency-name: "react"
+      - dependency-name: "react-dom"
+      - dependency-name: "react-native"
